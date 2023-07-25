@@ -5,7 +5,7 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
 const project = [
     { name: "Express API", image: "/Vision.jpg", description: "Express.js API with CRUD features. MongoDB Database. HTML, CSS, EJS, Bootstrap5 Frontend.", link: "https://www.github.com/hamadullah16/ExpressAPI" },
-    { name: "Title", image: "/NoThumbnail.jpg", description: "Single page Resume application based on React.", link: "" },
+    { name: "Resume - React App", image: "/NoThumbnail.jpg", description: "Single page Resume application based on React.", link: "https://resume-react-app.vercel.app" },
     { name: "Title", image: "/NoThumbnail.jpg", description: "Description", link: "" }
 ]
 

@@ -29,7 +29,7 @@ function Nav() {
       <div className="container">
         <div className="navbar-brand">
           {socials.map(item => (
-            <a key={item.url} href={item.url} className="navItem">
+            <a key={item.url} href={item.url} className="navItem" target="_blank" rel="noreferrer">
               <FontAwesomeIcon icon={item.icon} size="2x" />
             </a>
           ))}

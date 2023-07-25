@@ -27,6 +27,11 @@
 .projectImage{
     height: 350px;
 }
+.projectImage:hover{
+    transform-origin: center;
+    transform: scale(0.98);
+    transition: 0.5s;
+}
 
 .flexItem{
     max-width: 400px;
@@ -51,4 +56,10 @@
     color: white;
     padding: 14px;
     font-size: 17px;
+}
+.button:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    font-weight: bold;
+    color: white;
 }

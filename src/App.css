@@ -4,7 +4,7 @@
   margin: 7px;
 }
 .nav-link{
-  color: white;
+  color: rgba(255, 255, 255, 0.575);
 }
 .purple{
   background-color: #4848ab;
@@ -15,4 +15,9 @@
 .dark{
   background-color: #292b2c;
 }
-
+.navItem :hover{
+  color: rgb(87, 87, 87);
+  transform-origin: center;
+  transform: scale(1.1);
+  transition: 0.3s;
+}

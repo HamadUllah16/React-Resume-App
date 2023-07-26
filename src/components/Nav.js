@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGithub,
@@ -23,6 +24,7 @@ const socials = [
 
 
 function Nav() {
+
   return (
 
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark shadow">
@@ -40,9 +42,16 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <a className="nav-link" href="/" aria-current="page">Home</a>
-            <a className="nav-link" href="/projects">Projects</a>
-            <a className="nav-link" href="/contact">Contact Me</a>
+            <Link className="navLink" activeClass="active" to="home" spy={true} smooth={false} offset={0} duration={500}>
+              Home
+            </Link>
+            <Link className="navLink" activeClass="active" to="projects" spy={true} smooth={false} offset={10} duration={500}>
+              Projects
+            </Link>
+            <Link className="navLink" activeClass="active" to="contact" spy={true} smooth={false} offset={10} duration={500}>
+              Contact
+            </Link>
+
           </div>
         </div>
       </div>

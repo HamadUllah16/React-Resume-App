@@ -8,7 +8,7 @@ function MainContent() {
   const title2 = "Specialized in Front-End"
   return (
     <FullScreen color={"purple"} >
-      <div>
+      <div id='home' >
         <div className={`container-sm ${Styles.main} d-flex justify-content-center align-items-center text-center`}>
           <div>
             <img className={`${Styles.pfp} img-thumbnail`} src={pfp} alt='pfp' />

@@ -4,7 +4,7 @@ import ProjectContainer from './ProjectContainer'
 
 function Projects() {
   return (
-    <div>
+    <div id='projects'>
         <FullScreen color={"dark"}>
           <ProjectContainer />
             

@@ -63,3 +63,13 @@
     font-weight: bold;
     color: white;
 }
+.btnScroll{
+    height: 50px;
+    width: 50px;
+    border: 3px;
+    border-radius: 50px;
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    right: 50px;
+    bottom: 60px;
+}

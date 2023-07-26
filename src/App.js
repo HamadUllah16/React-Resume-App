@@ -4,6 +4,7 @@ import Nav from "./components/Nav"
 import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import ScrollToTopBtn from './components/ScrollToTopBtn';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <MainContent />
       <Projects />
       <Contact />
+      <ScrollToTopBtn />
       <Footer />
 
     </div>

@@ -4,7 +4,7 @@ import Form from "./Form"
 
 function Contact() {
   return (
-    <div>
+    <div id='contact'>
         <FullScreen color={"purple"}>
             <Form />
         </FullScreen>

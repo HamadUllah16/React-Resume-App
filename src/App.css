@@ -1,13 +1,27 @@
+/*Colors:
+rgb(87, 87, 87); --- Light Grey
+rgb(72, 72, 171); --- Purple
+
+*/
 .navItem{
   text-decoration: none;
   color: white;
   margin: 7px;
 }
-.nav-link{
-  color: rgba(255, 255, 255, 0.575);
+.navLink{
+  text-decoration: none;
+  padding: 5px;
+  margin-right: 4px;
+  color: white;
+  transition: all 0.2s;
 }
+.navLink:hover{
+  color: rgb(87, 87, 87);
+  border-bottom: 3px solid white;
+}
+
 .purple{
-  background-color: #4848ab;
+  background-color: rgb(72, 72, 171);
 }
 .cream{
   background-color: #ded3d3;

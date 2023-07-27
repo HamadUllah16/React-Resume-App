@@ -14,7 +14,7 @@ function Form() {
   }
   return (
     <div className={`container-sm p-3 d-flex justify-content-center ${Styles.main}`} >
-      <form className={`${Styles.form} p-3 rounded shadow`} onSubmit={submitHandler}>
+      <form className={`${Styles.form} m-4 p-3 rounded shadow`} onSubmit={submitHandler}>
         <h1 className='text-center'>Contact me</h1>
         <div className="mb-3">
           <label htmlFor="name" className="form-label">Name</label>

@@ -11,15 +11,15 @@ const project = [
 
 function ProjectContainer() {
 
-    const renderProjects = project.map((item,index) => (<div key={index} className={`${Styles.flexItem} m-2 rounded bg-light shadow text-light`}>
+    const renderProjects = project.map((item,index) => (<div key={index} className={`${Styles.flexItem} mb-5 rounded bg-light shadow text-light`}>
         <img src={item.image} className={`${Styles.projectImage} img-thumbnail`} alt='project banner'/>
         <h1 className='fs-3 py-1 px-2 text-dark'>{item.name}</h1>
         <p className='px-2 text-dark'>{item.description}</p>
         <a className={`${Styles.a} px-2 text-dark`} href={item.link} target='_blank' rel='noreferrer'>Read more <FontAwesomeIcon icon={faArrowRight} /></a>
     </div>))
     return (
-        <div className={`${Styles.main}`}>
-            <h1 className='text-light p-3 text-center'>Featured Projects</h1>
+        <div>
+            <h1 className='text-light py-3 text-center'>Featured Projects</h1>
             <div className={`container d-sm-flex flex-wrap justify-content-evenly`}>
                 
                     {renderProjects}

@@ -42,7 +42,7 @@ function Nav() {
         </button>
         <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div className="navbar-nav ms-auto">
-            <Link className="navLink" activeClass="active" to="home" spy={true} smooth={false} offset={0} duration={500}>
+            <Link className="navLink" activeClass="active" to="home" spy={true} smooth={false} offset={-70} duration={500}>
               Home
             </Link>
             <Link className="navLink" activeClass="active" to="projects" spy={true} smooth={false} offset={10} duration={500}>

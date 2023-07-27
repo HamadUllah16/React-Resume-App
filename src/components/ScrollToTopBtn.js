@@ -28,7 +28,7 @@ function ScrollToTopBtn() {
   return (
     <div>
          {showBtn &&
-         <button className={`${Styles.btnScroll}`} onClick={scrollToTop}> <FontAwesomeIcon  icon={faArrowUp} /></button> }
+         <button className={`${Styles.btnScroll} shadow`} onClick={scrollToTop}> <FontAwesomeIcon  icon={faArrowUp} /></button> }
     </div>
   )
 }

@@ -3,33 +3,49 @@ rgb(87, 87, 87); --- Light Grey
 rgb(72, 72, 171); --- Purple
 
 */
-.navItem{
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navItem {
   text-decoration: none;
   color: white;
   margin: 7px;
 }
-.navLink{
+
+.navLink {
   text-decoration: none;
   padding: 5px;
   margin-right: 4px;
   color: white;
   transition: all 0.2s;
 }
-.navLink:hover{
+
+.navLink:hover {
   color: rgb(87, 87, 87);
   border-bottom: 3px solid white;
 }
 
-.purple{
+.purple {
   background-color: rgb(72, 72, 171);
 }
-.cream{
+
+.cream {
   background-color: #ded3d3;
 }
-.dark{
+
+.dark {
   background-color: #292b2c;
 }
-.navItem :hover{
+.white {
+    background-color: white;
+  }
+
+
+.navItem :hover {
   color: rgb(87, 87, 87);
   transform-origin: center;
   transform: scale(1.1);

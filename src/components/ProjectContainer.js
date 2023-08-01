@@ -23,7 +23,7 @@ function ProjectContainer() {
 
     </div>))
     return (
-        <div>
+        <div className='py-2'>
             <h1 className='text-light py-3 text-center'>Featured Projects</h1>
             <div className={`container d-sm-flex flex-wrap justify-content-evenly`}>
 

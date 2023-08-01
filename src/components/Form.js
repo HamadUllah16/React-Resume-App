@@ -1,10 +1,14 @@
 import React, { useState } from 'react'
 import Styles from "../styles.module.css"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
+
 
 function Form() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
+  const sendEmail = "hamadullah16@gmail.com"
 
   function submitHandler(e) {
     e.preventDefault();
@@ -12,6 +16,16 @@ function Form() {
     setEmail("");
     setMessage("");
   }
+  const [copy, setCopy] = useState("Copy")
+  const [copyStyle, setCopyStyle] = useState("btn border shadow ms-2")
+const copyHandler = ()=>{
+  navigator.clipboard.writeText(sendEmail);
+  setCopyStyle("btn border shadow ms-2 bg-success text-light")
+  setCopy(<FontAwesomeIcon icon={faCheck} className='' />)
+  
+}
+
+
   return (
     <div className={`container-md p-3 d-flex justify-content-center ${Styles.main}`} >
       <form className={`${Styles.form} m-4 p-3 rounded shadow`} onSubmit={submitHandler}>
@@ -33,8 +47,14 @@ function Form() {
           </div>
 
           <button type="submit" className={`btn ${Styles.button} shadow`}>Submit</button>
+          <div className='py-3'>
+            <label className='py-2'>Send a mail instead?</label>
+            <p className='btn  bg-dark text-light border shadow'>{sendEmail}</p>
+            <p className={`${copyStyle}`} onClick={copyHandler}>{copy}</p>
+          </div>
         </div>
       </form>
+
     </div>
   )
 }

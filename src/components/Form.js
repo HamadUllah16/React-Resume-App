@@ -20,7 +20,7 @@ function Form() {
   const [copyStyle, setCopyStyle] = useState("btn border shadow ms-2")
 const copyHandler = ()=>{
   navigator.clipboard.writeText(sendEmail);
-  setCopyStyle("btn border shadow ms-2 bg-success text-light")
+  setCopyStyle(`btn border shadow ms-2 bg-success text-light ${Styles.btnCopy}`)
   setCopy(<FontAwesomeIcon icon={faCheck} className='' />)
   
 }
@@ -49,8 +49,8 @@ const copyHandler = ()=>{
           <button type="submit" className={`btn ${Styles.button} shadow`}>Submit</button>
           <div className='py-3'>
             <label className='py-2'>Send a mail instead?</label>
-            <p className='btn  bg-dark text-light border shadow'>{sendEmail}</p>
-            <p className={`${copyStyle}`} onClick={copyHandler}>{copy}</p>
+            <p className='btn bg-dark text-light border shadow'>{sendEmail}</p>
+            <p className={`${copyStyle} ${Styles.btnCopy}`} onClick={copyHandler}>{copy}</p>
           </div>
         </div>
       </form>

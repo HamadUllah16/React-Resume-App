@@ -5,7 +5,7 @@ import Projects from "./components/Projects"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
 import ScrollToTopBtn from './components/ScrollToTopBtn';
-import Fade from "react-reveal"
+import { Fade } from "react-awesome-reveal"
 
 
 function App() {

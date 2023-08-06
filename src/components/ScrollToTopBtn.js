@@ -10,7 +10,7 @@ function ScrollToTopBtn() {
 
     useEffect(() => {
         window.addEventListener("scroll", () => {
-            if (window.scrollY > 400) {
+            if (window.scrollY > 100) {
                 setShowBtn(true)
 
             }
@@ -28,8 +28,8 @@ function ScrollToTopBtn() {
     }
     return (
         <div>
-            {
-                <Fade opposite when={showBtn}><button className={`${Styles.btnScroll} shadow`} onClick={scrollToTop}> <FontAwesomeIcon icon={faArrowUp} /></button></Fade>
+            {showBtn &&
+                <Fade><button className={`${Styles.btnScroll} shadow`} onClick={scrollToTop}> <FontAwesomeIcon icon={faArrowUp} /></button></Fade>
             }
         </div>
     )

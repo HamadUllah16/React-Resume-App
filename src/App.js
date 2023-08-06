@@ -12,15 +12,15 @@ function App() {
   return (
     <div className="App">
       <Nav />
-      <Fade>
+      <Fade triggerOnce={true}>
 
         <MainContent />
         <Projects />
         <Contact />
-        <ScrollToTopBtn />
-
       </Fade>
+      <ScrollToTopBtn />
       <Footer />
+      
 
     </div>
   );

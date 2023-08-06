@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import Styles from "../styles.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
+import Fade from 'react-reveal/Fade';
 
 function ScrollToTopBtn() {
     const [showBtn, setShowBtn] = useState(false);
@@ -9,7 +10,7 @@ function ScrollToTopBtn() {
 
     useEffect(()=>{
         window.addEventListener("scroll", ()=>{
-            if(window.scrollY>200){
+            if(window.scrollY>400){
                 setShowBtn(true)
 
             }
@@ -23,12 +24,13 @@ function ScrollToTopBtn() {
         window.scrollTo({
             top:0,
             behavior: 'smooth'
-        })    
+        })
     }
   return (
     <div>
-         {showBtn &&
-         <button className={`${Styles.btnScroll} shadow`} onClick={scrollToTop}> <FontAwesomeIcon  icon={faArrowUp} /></button> }
+         {
+         <Fade opposite when={showBtn}><button className={`${Styles.btnScroll } shadow`} onClick={scrollToTop}> <FontAwesomeIcon  icon={faArrowUp} /></button></Fade>
+          }
     </div>
   )
 }

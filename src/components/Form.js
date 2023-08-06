@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Styles from "../styles.module.css"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {faCheck} from "@fortawesome/free-solid-svg-icons";
+import {faCheck, faCopy} from "@fortawesome/free-solid-svg-icons";
 
 
 function Form() {
@@ -9,6 +9,8 @@ function Form() {
   const [email, setEmail] = useState("")
   const [message, setMessage] = useState("")
   const sendEmail = "hamadullah16@gmail.com"
+  const [copy, setCopy] = useState(<div>Copy<FontAwesomeIcon icon={faCopy} className='mx-1' /></div>)
+  const [copyStyle, setCopyStyle] = useState("btn border shadow")
 
   function submitHandler(e) {
     e.preventDefault();
@@ -16,12 +18,13 @@ function Form() {
     setEmail("");
     setMessage("");
   }
-  const [copy, setCopy] = useState("Copy")
-  const [copyStyle, setCopyStyle] = useState("btn border shadow ms-2")
+
 const copyHandler = ()=>{
   navigator.clipboard.writeText(sendEmail);
-  setCopyStyle(`btn border shadow ms-2 bg-success text-light ${Styles.btnCopy}`)
-  setCopy(<FontAwesomeIcon icon={faCheck} className='' />)
+  setCopy(<div>Done <FontAwesomeIcon icon={faCheck} /></div>)
+  setCopyStyle("btn border shadow bg-success text-light")
+  setTimeout(()=>setCopy(<div>Copy<FontAwesomeIcon icon={faCopy} className='ms-1' /></div>), 3000)
+  setTimeout(()=>setCopyStyle("btn border shadow"), 3000)
   
 }
 
@@ -49,7 +52,7 @@ const copyHandler = ()=>{
           <button type="submit" className={`btn ${Styles.button} shadow`}>Submit</button>
           <div className='py-3'>
             <label className='py-2'>Send a mail instead?</label>
-            <p className='btn bg-dark text-light border shadow'>{sendEmail}</p>
+            <p className='btn bg-dark text-light border shadow me-1'>{sendEmail}</p>
             <p className={`${copyStyle} ${Styles.btnCopy}`} onClick={copyHandler}>{copy}</p>
           </div>
         </div>

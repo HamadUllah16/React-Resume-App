@@ -32,6 +32,9 @@
     transform: scale(0.98);
     transition: 0.5s;
 }
+.description{
+    min-height: 50px;
+}
 
 .flexItem{
     max-width: 400px;
@@ -80,6 +83,9 @@
     right: 50px;
     bottom: 60px;
 }
+
+
 .btnCopy{
-    width: 60px;
+    width: 90px;
+    transition: 1s;
 }

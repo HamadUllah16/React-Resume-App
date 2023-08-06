@@ -5,11 +5,10 @@ import ProjectContainer from './ProjectContainer'
 function Projects() {
   return (
     <div id='projects'>
-        <FullScreen color={"dark"}>
-          <ProjectContainer />
-            
-        </FullScreen>
-      
+      <FullScreen color={"dark"}>
+        <ProjectContainer />
+      </FullScreen>
+
     </div>
   )
 }

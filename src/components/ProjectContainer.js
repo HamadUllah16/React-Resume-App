@@ -12,13 +12,13 @@ const project = [
 
 function ProjectContainer() {
 
-    const renderProjects = project.map((item, index) => (<div key={index} className={`${Styles.flexItem} mb-5 text-dark rounded bg-light shadow text-light`}>
-        <div><a href={item.release} target='_blank' rel='noreferrer'><img src={item.image} className={`${Styles.projectImage} img-fluid`} alt='project banner' /></a></div>
+    const renderProjects = project.map((item, index) => (<div key={index} className={`${Styles.flexItem} mb-5 text-dark rounded-3 bg-light shadow text-light`}>
+        <div><a href={item.release==="" ? item.repo : item.release} target='_blank' rel='noreferrer'><img src={item.image} className={`rounded-2 ${Styles.projectImage} img-fluid`} alt='project banner' /></a></div>
         <div className='px-2'>
             <h1 className='fs-3 py-1 text-dark text-center'>{item.name}</h1>
-            <p className='text-dark'>{item.description}</p>
-            <div> {item.deployed ? <div className='d-inline'><p className='d-inline fw-bold'>Deployment:</p> <a href={item.repo} target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} /></a> </div> : <p className='text-dark'>Not deployed yet</p>}</div>
-            {item.release === "" ? <p className='fw-bold'>Not Released Yet!</p> : <div><a className={`${Styles.a} text-dark`} href={item.release} target='_blank' rel='noreferrer'><b>Released:</b> Read more <FontAwesomeIcon icon={faArrowRight} /></a></div>}
+            <p className={`text-dark ${Styles.description}`}>{item.description}</p>
+            {item.deployed ? <div className='d-inline'><p className='d-inline'>GitHub:</p> <a href={item.repo} target='_blank' rel='noreferrer'><FontAwesomeIcon icon={faGithub} style={{ color: "#000000" }} /></a> </div> : <p className='text-dark'>Not deployed yet</p>}
+            {item.release === "" ? <p className='m-0 pb-1' >Pending</p> : <div><a className={`${Styles.a} text-dark`} href={item.release} target='_blank' rel='noreferrer'>Read more <FontAwesomeIcon icon={faArrowRight} /></a></div>}
         </div>
 
     </div>))

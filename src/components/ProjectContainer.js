@@ -7,7 +7,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 const project = [
     { name: "Express API", image: "/Thumbnail_Express.jpg", description: "Express.js API with CRUD features. MongoDB Database. HTML, CSS, EJS, Bootstrap5 Frontend.", release: "", repo: "https://github.com/HamadUllah16/ExpressAPI", deployed: true },
     { name: "Portfolio App", image: "/Thumbnail_Resume.jpg", description: "Single page portfolio application built in React & Bootstrap.", release: "https://hamad-portfolio.vercel.app", repo: "https://github.com/HamadUllah16/React-Resume-App", deployed: true },
-    { name: "ToDos App", image: "/todo-app.png", description: "A simple ToDos application built in React.", release: "https://hamad-todo.vercel.app", repo: "https://github.com/HamadUllah16/ToDo-App", deployed: true }
+    { name: "Little Lemon Restaurant", image: "/littlelemon.png", description: "Little Lemon - META's Frontend Capstone Project.", release: "https://littlelemonchicago.vercel.app", repo: "https://github.com/HamadUllah16/LittleLemon-Reservations", deployed: true }
 ]
 
 function ProjectContainer() {

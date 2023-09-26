@@ -1,6 +1,6 @@
 import React from 'react'
-import FullScreen from './FullScreen'
-import Form from "./Form"
+import FullScreen from '../components/FullScreen'
+import Form from "../components/Form"
 
 function Contact() {
   return (

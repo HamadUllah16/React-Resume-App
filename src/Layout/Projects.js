@@ -1,6 +1,6 @@
 import React from 'react'
-import FullScreen from './FullScreen'
-import ProjectContainer from './ProjectContainer'
+import FullScreen from '../components/FullScreen'
+import ProjectContainer from '../components/ProjectContainer'
 
 function Projects() {
   return (

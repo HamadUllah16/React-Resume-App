@@ -26,6 +26,8 @@
 }
 .projectImage{
     height: 350px;
+    width: 100%;object-fit: cover;
+    background-color: #7575d7;
 }
 .projectImage:hover{
     transform-origin: center;
@@ -43,12 +45,6 @@
 .a{
     color: black;
     text-decoration: blue;
-}
-.skillItems{
-    max-width: 500px;
-    font-size: 20px;
-    padding: 3px;
-    
 }
 
 
